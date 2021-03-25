@@ -1,0 +1,12 @@
+{
+  "name": "meu-app-programaria",
+  "displayName": "meu-app-programaria",
+  "expo": {
+    "name": "meu-app-programaria",
+    "slug": "meu-app-programaria",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
