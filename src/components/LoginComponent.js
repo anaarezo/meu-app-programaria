@@ -8,22 +8,17 @@ import {
 } from "react-native";
 
 const LoginComponent = ({ navigation }) => {
-  const [text, onChangeText] = React.useState(null);
-  const [password, onChangePassword] = React.useState(null);
-
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <Text style={styles.title}>Bem-vinda!!!</Text>
       <Text style={styles.subtitle}>Faça o Login:</Text>
       <TextInput
         style={styles.field}
-        value={text}
         placeholder="Digite seu CPF"
         keyboardType="numeric"
       />
       <TextInput
         style={styles.field}
-        value={password}
         placeholder="Digite sua senha"
         secureTextEntry
       />
