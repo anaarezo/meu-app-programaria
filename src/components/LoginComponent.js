@@ -1,44 +1,38 @@
 import * as React from "react";
 import {
-  Button,
-  View,
-  Text,
   SafeAreaView,
-  StyleSheet,
+  Text,
   TextInput,
+  StyleSheet,
   TouchableOpacity,
 } from "react-native";
 
 const LoginComponent = ({ navigation }) => {
-  const [text, onChangeText] = React.useState("Digite seu usuário");
+  const [text, onChangeText] = React.useState(null);
   const [password, onChangePassword] = React.useState(null);
+
   return (
-    <SafeAreaView>
-      <View accessibilityRole="form">
-        <Text style={styles.title}>Bem-vinda!</Text>
-        <Text style={styles.labelLogin}>Entre para continuar</Text>
-        <Text style={styles.labelUser}>Usuário:</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangeText}
-          value={text}
-        />
-        <Text style={styles.labelUser}>Senha:</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={onChangePassword}
-          value={password}
-          placeholder="Digite sua senha"
-          keyboardType="password"
-          secureTextEntry
-        />
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => navigation.navigate("Home")}
-        >
-          <Text style={styles.buttonText}>Fazer o login</Text>
-        </TouchableOpacity>
-      </View>
+    <SafeAreaView style={{ flex: 1 }}>
+      <Text style={styles.title}>Bem-vinda!!!</Text>
+      <Text style={styles.subtitle}>Faça o Login:</Text>
+      <TextInput
+        style={styles.field}
+        value={text}
+        placeholder="Digite seu CPF"
+        keyboardType="numeric"
+      />
+      <TextInput
+        style={styles.field}
+        value={password}
+        placeholder="Digite sua senha"
+        secureTextEntry
+      />
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("Home")}
+      >
+        <Text style={styles.buttonText}>Fazer o login</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -47,35 +41,36 @@ export default LoginComponent;
 
 const styles = StyleSheet.create({
   title: {
-    paddingTop: 60,
     paddingHorizontal: 16,
-    fontSize: 35,
+    paddingTop: 50,
+    fontSize: 25,
     fontWeight: "bold",
-    color: "#192a4d",
+    color: "#3b3b3b",
   },
-  labelLogin: {
+  subtitle: {
     paddingHorizontal: 16,
-    fontSize: 20,
-    color: "#192a4d",
+    fontSize: 16,
+    color: "#3b3b3b",
   },
-  labelUser: {
+  field: {
+    marginHorizontal: 16,
     paddingHorizontal: 16,
-  },
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    // placeholderTextColor: "red",
+    margin: 10,
+    height: 50,
+    borderBottomWidth: 1,
+    borderColor: "#3b3b3b",
+    fontSize: 16,
   },
   button: {
     margin: 16,
-    paddingVertical: 16,
-    paddingHorizontal: 20,
+    padding: 16,
+    height: 60,
     backgroundColor: "#692ca0",
-    borderRadius: 5,
+    borderRadius: 15,
   },
   buttonText: {
     color: "#ffffff",
-    fontSize: 25,
+    fontSize: 20,
+    fontWeight: "bold",
   },
 });

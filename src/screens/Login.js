@@ -1,11 +1,13 @@
 import * as React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import LoginComponent from "../components/LoginComponent";
 
 const Login = ({ navigation }) => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <LoginComponent navigation={navigation} />
+    <SafeAreaView>
+      <View style={{ flex: 1 }}>
+        <LoginComponent navigation={navigation} />
+      </View>
     </SafeAreaView>
   );
 };
