@@ -1,11 +1,12 @@
-# Workshop Técnico – Como criar um projeto Mobile com React Native usando Expo
-Sprint Programaria - Primeiros passos com React Native usando Expo
+# Sprint Programaria
+
+## Workshop Técnico – Como criar um projeto Mobile com React Native usando Expo
 ![image](https://user-images.githubusercontent.com/13490305/113912173-376fa000-97b1-11eb-8653-bfccef8a08e2.png)
 
 ## Sumário
 - [Arquitetura](#arquitetura)
 - [Ferramentas Utilizadas](#ferramentas-utilizadas)
-- [Instalação](#instalacao)
+- [Instalação](#instalação)
 - [Desenvolvedoras](#desenvolvedoras)
 
 
