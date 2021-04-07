@@ -23,6 +23,7 @@
 
 ## Ferramentas utilizadas
 
+- [VSCode](https://code.visualstudio.com/download)
 - [React Native](https://reactnative.dev/)
 - [React Navigation](https://reactnavigation.org/)
 - [NodeJS](https://nodejs.org/en/download/)
